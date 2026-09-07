@@ -1,6 +1,6 @@
 # The Batch Scripting Course
 
-A complete, self-paced course on **Windows batch scripting** (`.bat` / `.cmd`), beginner to advanced — the same format as [python-course](https://github.com/HunterGHall/python-course).
+A self-paced course on **Windows batch scripting** (`.bat` / `.cmd`), beginner to advanced. Made by Claude.
 
 **Read it online:** https://hunterghall.github.io/batch-course/
 
