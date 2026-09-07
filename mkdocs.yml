@@ -1,0 +1,89 @@
+site_name: The Batch Scripting Course
+site_description: A complete, self-paced Windows batch (.bat / .cmd) curriculum — beginner to advanced.
+site_url: https://hunterghall.github.io/batch-course/
+repo_url: https://github.com/HunterGHall/batch-course
+repo_name: HunterGHall/batch-course
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - toc.follow
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Beginner:
+      - beginner/index.md
+      - 1. Setup & your first script: beginner/01-setup-and-first-script.md
+      - 2. echo, comments & script structure: beginner/02-echo-comments-structure.md
+      - 3. Variables & set: beginner/03-variables-and-set.md
+      - 4. Command-line arguments: beginner/04-command-line-arguments.md
+      - 5. Conditionals with if: beginner/05-conditionals-with-if.md
+      - 6. Loops with for: beginner/06-loops-with-for.md
+      - 7. Files & folders: beginner/07-files-and-folders.md
+      - 8. Redirection & pipes: beginner/08-redirection-and-pipes.md
+      - 9. Subroutines with call & goto: beginner/09-subroutines-call-goto.md
+      - 10. Capstone - file organizer: beginner/10-capstone-file-organizer.md
+  - Intermediate:
+      - intermediate/index.md
+      - 1. Delayed expansion: intermediate/01-delayed-expansion.md
+      - 2. String manipulation: intermediate/02-string-manipulation.md
+      - 3. for /F deep dive: intermediate/03-for-f-deep-dive.md
+      - 4. Error handling & exit codes: intermediate/04-error-handling-exit-codes.md
+      - 5. setlocal, endlocal & scope: intermediate/05-setlocal-endlocal-scope.md
+      - 6. Arrays & pseudo data structures: intermediate/06-arrays-and-data-structures.md
+      - 7. Date, time & math: intermediate/07-date-time-and-math.md
+      - 8. User interaction & menus: intermediate/08-user-interaction-and-menus.md
+      - 9. Scheduling & running scripts: intermediate/09-scheduling-and-running.md
+      - 10. Capstone - backup utility: intermediate/10-capstone-backup-utility.md
+  - Advanced:
+      - advanced/index.md
+      - 1. Recursion & advanced for: advanced/01-recursion-and-advanced-for.md
+      - 2. Robust argument parsing: advanced/02-robust-argument-parsing.md
+      - 3. Working with the registry: advanced/03-working-with-the-registry.md
+      - 4. WMIC, where & calling PowerShell: advanced/04-wmic-where-powershell.md
+      - 5. Text processing with findstr: advanced/05-text-processing-findstr.md
+      - 6. Performance & pitfalls: advanced/06-performance-and-pitfalls.md
+      - 7. Hybrid scripts: advanced/07-hybrid-scripts.md
+      - 8. Packaging & distribution: advanced/08-packaging-and-distribution.md
+      - 9. Debugging techniques: advanced/09-debugging-techniques.md
+      - 10. Capstone - deployment automation: advanced/10-capstone-deployment-automation.md
